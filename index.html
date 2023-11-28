@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SPACE FORCE | 2d shooter game</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="android-chrome-512x512.png">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="game_over" class="state-ui-container">
+  <div class="console">
+   <div class="ui-text ui-text--heading">GAME OVER!</div>
+   <div id="final_score" class="ui-text"></div> 
+   <div class="ui-text">PRESS [ENTER] TO PLAY AGAIN!</div>
+   <div class="ui-text">PRESS [R] TO GO TO TITLE SCREEN</div>
+  </div>
+</div>
+<div id="title" class="state-ui-container">
+  <div class="console">
+    <div class="ui-text ui-text--heading">SPACE FORCE</div>
+    <div class="ui-text">INSTRUCTIONS:</div>
+    <div class="ui-text">PRESS [ARROW KEYS] TO MOVE</div>
+    <div class="ui-text">PRESS [SPACE] TO SHOOT</div>
+    <div class="ui-text">PRESS [ENTER] TO PLAY</div>
+    <div class="ui-text">PRESS [R] TO COME BACK TO THIS SCREEN</div>
+  </div>
+</div>
+<div id="game" class="state-ui-container">
+  <div class="banner">
+    <div id="score" class="ui-text">SCORE: 0</div>
+    <div id="lives" class="ui-text"></div>
+  </div>
+</div>
+<!-- partial -->
+  <script src="./MYscript.js"></script>
+
+</body>
+</html>
