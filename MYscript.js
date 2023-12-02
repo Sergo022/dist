@@ -28,7 +28,6 @@ let explosionSprite = 'exspl1.png';
   LEFT = 37;
   RIGHT = 39;
   SHOOT = 32;
-  RESET = 82;
   START = 13;
 
 //==================================перевірка чи перетинаються обєкти в грі===============================
@@ -687,11 +686,6 @@ class InputManager {
     case InputManager.SHOOT:
       this.shooting = state;
       break;
-    case InputManager.RESET:
-      game.reset();
-      game.setState(game.states.title);
-      game.currentState.init();
-      break;
     case InputManager.START:
       this.start = state;
       break;
@@ -703,7 +697,6 @@ InputManager.DOWN = DOWN;
 InputManager.LEFT = LEFT;
 InputManager.RIGHT = RIGHT;
 InputManager.SHOOT = SHOOT;
-InputManager.RESET = RESET;
 InputManager.START = START;
 
 let inputManager = new InputManager();

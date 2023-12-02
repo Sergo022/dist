@@ -41,15 +41,9 @@ body {
   left: 0;
 }
 
-#lives {
-  right: 0;
-}
-
 .ui-text--heading {
   font-size: 4em;
 }
-
-
 
 .state-ui-container {
   width: 100%;
